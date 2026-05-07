@@ -114,9 +114,10 @@ a {
   width: 42px;
   height: 42px;
   padding: 10px;
-  background: rgba(255, 247, 238, 0.12);
-  border: 1px solid var(--border);
+  background: rgba(15, 16, 15, 0.82);
+  border: 1px solid rgba(247, 228, 183, 0.2);
   border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .menu-toggle span:not(.sr-only) {
@@ -1052,7 +1053,8 @@ blockquote {
   }
 
   .video-header .menu-toggle {
-    background: rgba(255, 253, 252, 0.88);
+    background: rgba(15, 16, 15, 0.86);
+    border-color: rgba(247, 228, 183, 0.22);
   }
 }
 
