@@ -1,0 +1,24 @@
+<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ONIC Beauty logo</title>
+  <desc id="desc">Modern ONIC Beauty logo with elegant gold wordmark and crescent monogram.</desc>
+  <defs>
+    <linearGradient id="gold" x1="73" y1="31" x2="647" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3D9A6"/>
+      <stop offset="0.34" stop-color="#B88A4B"/>
+      <stop offset="0.68" stop-color="#F7E4B7"/>
+      <stop offset="1" stop-color="#8A6335"/>
+    </linearGradient>
+    <linearGradient id="softGold" x1="45" y1="42" x2="190" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0C7"/>
+      <stop offset="0.55" stop-color="#C39255"/>
+      <stop offset="1" stop-color="#7F5A32"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="28" fill="#070B0A"/>
+  <circle cx="111" cy="110" r="62" stroke="url(#softGold)" stroke-width="10"/>
+  <path d="M137 64C115 68 96 86 91 110C86 134 96 158 116 171C81 166 54 137 54 110C54 76 82 48 116 48C124 48 132 50 137 64Z" fill="#070B0A"/>
+  <path d="M161 151C161 147.7 163.7 145 167 145C170.3 145 173 147.7 173 151C173 154.3 170.3 157 167 157C163.7 157 161 154.3 161 151Z" fill="url(#softGold)"/>
+  <text x="220" y="132" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="400">ONIC</text>
+  <path d="M220 162H558" stroke="url(#gold)" stroke-width="1.4" stroke-linecap="round" opacity="0.65"/>
+  <text x="222" y="186" fill="#E9D7B7" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="6">BEAUTY STUDIO</text>
+</svg>
