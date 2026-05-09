@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { clients as initialClients, scheduleLetters, treatments as initialTreatments, type Client, type Treatment } from "@/lib/mock-data";
+import { alphabetIndex, clients as initialClients, treatments as initialTreatments, type Client, type Treatment } from "@/lib/mock-data";
 import { isSupabaseConfigured } from "@/lib/supabase";
 
 type ClientTab = "resumen" | "historial" | "proximas" | "nueva";
@@ -58,19 +58,16 @@ export function BackofficeShell() {
           </div>
 
           <div className="agenda-lines">
-            {scheduleLetters.map((letter, index) => (
+            {alphabetIndex.map((letter) => (
               <button
                 className="agenda-line"
                 key={letter}
                 onClick={() => {
                   setIsClientModalOpen(true);
-                  setQuery("");
+                  setQuery(letter);
                 }}
               >
-                <span>
-                  <strong>{["11:00", "13:00", "16:00", "18:00"][index]}</strong>
-                  <small>{["Facial / disponible", "Lash Lift / Claudia", "Cejas / Maria", "Revision / libre"][index]}</small>
-                </span>
+                <span aria-hidden="true"></span>
                 <b>{letter}</b>
               </button>
             ))}

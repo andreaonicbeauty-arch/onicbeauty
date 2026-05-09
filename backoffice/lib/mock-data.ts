@@ -74,4 +74,4 @@ export const treatments: Treatment[] = [
   { id: "t-005", name: "Lash Lift", category: "Pestanas", duration: "1h 20m", price: 49, active: true }
 ];
 
-export const scheduleLetters = ["A", "B", "C", "D"];
+export const alphabetIndex = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
