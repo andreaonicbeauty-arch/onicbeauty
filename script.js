@@ -22,9 +22,13 @@ if (menuToggle && siteNav) {
     }
   });
 
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const normalizePage = (value) => {
+    const pathname = new URL(value, window.location.origin).pathname;
+    return pathname.replace(/\/index\.html$/, "/").replace(/\.html$/, "").replace(/\/$/, "") || "/";
+  };
+  const currentPage = normalizePage(window.location.href);
   siteNav.querySelectorAll("a").forEach((link) => {
-    const linkPage = link.getAttribute("href");
+    const linkPage = normalizePage(link.getAttribute("href"));
     if (linkPage === currentPage) {
       link.classList.add("is-active");
       link.setAttribute("aria-current", "page");

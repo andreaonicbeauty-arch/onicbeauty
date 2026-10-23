@@ -123,7 +123,7 @@
 .film-stage { position: relative; height: 100vh; height: 100svh; overflow: hidden; isolation: isolate; }
 .film-ready .film-stage { position: sticky; top: 0; }
 .film-background { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 67% center; transform-origin: 67% 48%; transform: scale(calc(1 + var(--film-p) * 1.4)); filter: blur(calc(var(--film-p) * 5px)); }
-.film-product { position: absolute; z-index: 2; width: 51%; height: 83%; right: 1%; top: 10%; object-fit: contain; opacity: var(--film-product); transform: translate3d(calc((1 - var(--film-product)) * 38vw), calc((1 - var(--film-product)) * 10vh), 0) rotate(calc(-14deg + var(--film-p) * 19deg)) scale(calc(.5 + var(--film-product) * .56 + var(--film-p) * .12)); }
+.film-product { position: absolute; z-index: 2; width: 46%; height: 72%; right: 3%; top: 18%; object-fit: contain; opacity: var(--film-product); transform: translate3d(calc((1 - var(--film-product)) * 38vw), calc((1 - var(--film-product)) * 10vh), 0) rotate(calc(-14deg + var(--film-p) * 19deg)) scale(calc(.5 + var(--film-product) * .56 + var(--film-p) * .12)); }
 .film-petals { position: absolute; z-index: 3; left: -14%; top: -12%; width: 128%; height: 128%; object-fit: cover; opacity: var(--film-petals); transform: translate3d(0, calc(100px - var(--film-p) * 220px), 0) rotate(calc(-8deg + var(--film-p) * 15deg)) scale(calc(.75 + var(--film-p) * .55)); pointer-events: none; }
 .film-copy { --film-copy-alpha: 0; position: absolute; z-index: 4; left: 7%; top: 49%; width: 49%; transform: translateY(calc(-50% + (1 - var(--film-copy-alpha)) * 30px)); opacity: var(--film-copy-alpha); color: #141411; pointer-events: none; }
 .film-copy h2 { font: 400 5.7rem/.98 Didot,"Bodoni 72",Georgia,serif; margin: 0 0 28px; letter-spacing: -.025em; }
@@ -135,7 +135,7 @@
 .film-finale { --film-copy-alpha: 1; }
 .film-ready .film-copy:first-of-type { --film-copy-alpha: 1; }
 .film-ready .film-finale { --film-copy-alpha: 0; }
-.film-skip { position: absolute; z-index: 5; right: 7%; bottom: 45px; font-size: .68rem; color: #29271f; border-bottom: 1px solid currentColor; padding-bottom: 6px; }
+.film-skip { position: absolute; z-index: 5; right: max(7%, 100px); bottom: 45px; font-size: .68rem; color: #29271f; border-bottom: 1px solid currentColor; padding-bottom: 6px; }
 .film-progress { position: absolute; z-index: 5; left: 7%; bottom: 45px; display: flex; align-items: center; gap: 16px; font: 10px Arial,sans-serif; color: #29271f; }
 .film-progress i { width: 110px; height: 1px; background: #29271f55; position: relative; }
 .film-progress i::after { content: ''; position: absolute; inset: 0; background: #29271f; transform-origin: left; transform: scaleX(var(--film-p)); }
@@ -160,7 +160,7 @@
   .film-copy { left: 7%; width: 86%; top: 24%; }
   .film-copy h2 { font-size: 3rem; line-height: 1.02; margin-bottom: 20px; }
   .film-copy .button { min-height: 48px; padding: 14px 19px; }
-  .film-product { width: 96%; height: 60%; right: -8%; top: 39%; }
+  .film-product { width: 84%; height: 50%; right: -1%; top: 37%; }
   .film-petals { width: 150%; height: 105%; left: -25%; top: -5%; object-fit: contain; }
   .film-skip { right: 100px; bottom: 32px; font-size: .6rem; }
   .film-progress { bottom: 32px; gap: 10px; }
@@ -227,7 +227,7 @@
 @media (max-height: 600px) {
   .film-copy { top: 52%; width: 65%; }
   .film-copy h2 { font-size: 3rem; }
-  .film-product { top: 15%; height: 85%; width: 64%; right: -17%; }
+  .film-product { top: 23%; height: 66%; width: 54%; right: -7%; }
   .film-skip, .film-progress { bottom: 18px; }
 }
 

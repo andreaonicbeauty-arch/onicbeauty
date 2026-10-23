@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onicbeauty.com/sitemap.xml
