@@ -229,8 +229,10 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="/interiors.css?v=20261023-2" />
   </head>
-  <body>
+  <body class="inner-page inner-servicios">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <a class="brand" href="/"><img class="brand-logo" src="assets/logo-onic.svg" alt="ONIC Beauty" /></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Abrir menú</span></button>
@@ -243,63 +245,75 @@
         <a class="nav-cta" href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
       </nav>
     </header>
-    <main>
-      <section class="page-hero">
-        <p class="eyebrow">Servicios</p>
-        <h1>Cejas, pestañas y micropigmentación en Madrid.</h1>
-        <p>Diseño y laminado de cejas, lifting de pestañas, microblading y tratamientos faciales en Goya, Madrid. Encuentra tu tratamiento y reserva en Treatwell.</p>
+    <main id="contenido">
+
+      <section class="inner-hero inner-hero--services">
+        <div class="inner-hero-copy">
+          <p class="eyebrow">Nuestros rituales · Goya, Madrid</p>
+          <h1>Cejas, pestañas<br /><em>y piel.</em></h1>
+          <p>Diseño de cejas, lifting de pestañas, microblading y tratamientos faciales. La técnica y el detalle, al servicio de tu belleza.</p>
+          <div class="hero-actions"><a class="button primary" href="#tratamientos">Encuentra tu ritual ↓</a><a class="inner-text-link" href="https://wa.me/34617253991">Te ayudamos a elegir ↗</a></div>
+
+        </div>
+        <div class="inner-hero-media">
+          <div class="depth-composition" data-depth-scene>
+            <figure class="inner-photo depth-main" data-inner-float="24"><img data-inner-shift="70" src="/assets/inner-brows.webp" srcset="/assets/inner-brows-600.webp 600w, /assets/inner-brows.webp 1120w" sizes="(max-width: 719px) 85vw, 42vw" alt="Detalle editorial de una ceja peinada con un cepillo, creado con IA" width="1120" height="1400" decoding="async" /></figure>
+            <figure class="inner-photo depth-inset" data-inner-float="-36"><img data-inner-shift="-46" src="/assets/inner-tools.webp" srcset="/assets/inner-tools-720.webp 720w, /assets/inner-tools.webp 1440w" sizes="(max-width: 719px) 85vw, 45vw" alt="Composición editorial de pigmento y herramientas de cejas, creada con IA" width="1440" height="960" decoding="async" /><figcaption>El valor del detalle.</figcaption></figure>
+
+            <span class="inner-stamp" aria-hidden="true">ONIC BEAUTY / EL ARTE DE CUIDARTE</span>
+          </div>
+          <p class="inner-image-note">Imagen editorial creada con IA · Inspiración ONIC</p>
+        </div>
       </section>
-      <section class="section photo-editorial" aria-label="Rituales de belleza">
-        <figure class="editorial-photo" data-parallax-scene data-reveal>
-          <img data-parallax="70" data-depth="12" data-tilt="0.9" src="assets/beauty-facial.webp" alt="Inspiración de un ritual facial" width="1400" height="1050" />
-          <figcaption>El arte de cuidarte.</figcaption>
-        </figure>
-        <figure class="editorial-photo portrait" data-parallax-scene data-reveal>
-          <img data-parallax="-55" data-depth="18" data-tilt="-1.2" src="assets/beauty-textures.webp" alt="Texturas y herramientas de belleza" width="900" height="1125" />
-          <figcaption>Cada detalle cuenta.</figcaption>
-        </figure>
-        <p class="photo-note">Imágenes editoriales creadas con IA.</p>
-      </section>
-      <section class="section services">
+      <nav class="ritual-index" aria-label="Explorar servicios"><a href="#tratamientos"><span>01</span> Tratamientos</a><a href="#especialidades"><span>02</span> Especialidades</a><a href="#antes-de-reservar"><span>03</span> Antes de reservar</a></nav>
+      <section class="section services" id="tratamientos" aria-labelledby="ritual-title">
+        <div class="inner-section-heading"><p class="eyebrow">Cuidado a tu medida</p><h2 id="ritual-title">Encuentra tu ritual.</h2><p>Explora los tratamientos y elige cómo quieres cuidarte hoy. Si tienes dudas, escríbenos.</p></div>
+        <div class="service-filter-bar" data-service-filters hidden><div class="service-filters" role="group" aria-label="Filtrar tratamientos"><button type="button" data-filter="todos" aria-pressed="true">Todos</button><button type="button" data-filter="cejas" aria-pressed="false">Cejas</button><button type="button" data-filter="pestanas" aria-pressed="false">Pestañas</button><button type="button" data-filter="faciales" aria-pressed="false">Faciales</button></div><span class="service-filter-count" data-service-count role="status" aria-live="polite"></span></div>
         <div class="service-grid">
-          <article class="service-card featured">
+          <article class="service-card featured" data-category="cejas pestanas">
             <span class="tag">Combo</span>
             <h3>Brow Lami + Lash Lift + diseño + tinte</h3>
             <p>Incluye Fluid Nutritive para un acabado completo de cejas y pestañas.</p>
             <div class="service-meta"><span>2h 15m</span><strong><s>108 EUR</s> 92 EUR</strong></div>
             <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
+          <a class="service-consult" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Brow%20Lami%20%2B%20Lash%20Lift%20%2B%20dise%C3%B1o%20%2B%20tinte.">Consultar este tratamiento por WhatsApp ↗</a>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-category="cejas">
             <span class="tag">Cejas</span>
             <h3>Diseño de cejas con pinzas</h3>
             <p>Diseño preciso y natural con Fluid Nutritive.</p>
             <div class="service-meta"><span>45m</span><strong>15 EUR</strong></div>
             <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
+          <a class="service-consult" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Dise%C3%B1o%20de%20cejas%20con%20pinzas.">Consultar este tratamiento por WhatsApp ↗</a>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-category="faciales">
             <span class="tag">Facial</span>
             <h3>Peeling natural</h3>
             <p>Tratamiento facial para renovar la piel y mejorar su luminosidad.</p>
             <div class="service-meta"><span>50m</span><strong>125 EUR</strong></div>
             <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
+          <a class="service-consult" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Peeling%20natural.">Consultar este tratamiento por WhatsApp ↗</a>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-category="cejas">
             <span class="tag">Laminación</span>
             <h3>Lami Brow</h3>
-            <p>Laminación, tinte, depilacion con pinza y Fluid Nutritive.</p>
+            <p>Laminación, tinte, depilación con pinza y Fluid Nutritive.</p>
             <div class="service-meta"><span>1h 30m</span><strong>49 EUR</strong></div>
             <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
+          <a class="service-consult" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Lami%20Brow.">Consultar este tratamiento por WhatsApp ↗</a>
           </article>
-          <article class="service-card">
+          <article class="service-card" data-category="pestanas">
             <span class="tag">Pestañas</span>
             <h3>Lash Lift</h3>
-            <p>Rizado de pestañas, tinte y nutrición para una mirada mas abierta.</p>
+            <p>Rizado de pestañas, tinte y nutrición para una mirada más abierta.</p>
             <div class="service-meta"><span>1h 20m</span><strong>49 EUR</strong></div>
             <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar</a>
+          <a class="service-consult" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20Lash%20Lift.">Consultar este tratamiento por WhatsApp ↗</a>
           </article>
         </div>
       </section>
-      <section class="section categories">
+      <p class="section service-price-note">Precios orientativos. Consulta la tarifa y la disponibilidad actuales al reservar en Treatwell.</p>
+      <section class="section categories" id="especialidades">
         <div class="section-heading compact">
           <p class="eyebrow">Carta de tratamientos</p>
           <h2>Más especialidades</h2>
@@ -311,9 +325,26 @@
           <details><summary>Maquillaje</summary><p>Maquillaje y micropigmentación desde 420 EUR.</p></details>
         </div>
       </section>
+
+      <section class="section inner-faq" id="antes-de-reservar"><div class="inner-section-heading"><p class="eyebrow">Antes de tu visita</p><h2>Te lo ponemos fácil.</h2></div><div class="category-list">
+        <details><summary>¿Cómo puedo reservar?</summary><p>Puedes <a href="https://www.treatwell.es/establecimiento/onic-beauty/">reservar en Treatwell</a> para consultar la disponibilidad o escribirnos por <a href="https://wa.me/34617253991">WhatsApp</a>.</p></details>
+        <details><summary>¿Y si no sé qué tratamiento elegir?</summary><p>Cuéntanos qué te gustaría cuidar y te ayudamos a orientarte. <a href="https://wa.me/34617253991">Habla con ONIC Beauty</a>.</p></details>
+        <details><summary>¿Dónde está el estudio?</summary><p>Estamos en Calle de Lombia 6, 28009 Madrid, en la zona de Goya. <a href="/ubicacion">Consulta cómo llegar y nuestros horarios</a>.</p></details>
+      </div></section>
+      <section class="inner-banner" aria-label="Reserva tu momento ONIC" data-depth-scene>
+        <figure class="inner-photo"><img data-inner-shift="95" src="/assets/inner-tools.webp" srcset="/assets/inner-tools-720.webp 720w, /assets/inner-tools.webp 1440w" sizes="(max-width: 719px) 85vw, 45vw" alt="Composición editorial de inspiración de belleza, creada con IA" width="1440" height="960" decoding="async" loading="lazy" /></figure>
+        <div class="inner-banner-copy"><p class="eyebrow">ONIC Beauty · Madrid</p><h2>Un momento tuyo.<br /><em>Una belleza muy tuya.</em></h2><a class="button" href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar mi momento <span aria-hidden="true">↗</span></a></div>
+      </section>
     </main>
-    <footer class="site-footer"><strong>ONIC Beauty</strong><span>Calle de Lombia 6, Madrid, 28009</span><a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar en Treatwell</a><small class="image-credit">Imágenes editoriales creadas con IA. Son ilustrativas.</small></footer>
+    <footer class="site-footer inner-footer">
+      <strong>ONIC Beauty</strong>
+      <nav class="inner-footer-links" aria-label="Enlaces del pie de página"><a href="/servicios">Tratamientos</a><a href="/ubicacion">Cómo llegar</a><a href="https://wa.me/34617253991">WhatsApp ↗</a><a href="#contenido">Volver arriba ↑</a></nav>
+      <span>Calle de Lombia 6 · 28009 Madrid</span>
+      <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar en Treatwell ↗</a>
+      <small class="image-credit">Imágenes editoriales creadas con IA. Son ilustrativas y no representan resultados de clientas ni fotografías del local.</small>
+    </footer>
     <a class="whatsapp-float" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustaria%20pedir%20informacion%20o%20reservar%20una%20cita." aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.7 12.7 0 0 0 5.3 22.74L3.8 28.8l6.18-1.47A12.7 12.7 0 1 0 16.02 3.2Zm0 2.34a10.36 10.36 0 0 1 8.78 15.84 10.34 10.34 0 0 1-13.93 3.63l-.44-.26-3.27.78.8-3.2-.29-.46A10.35 10.35 0 0 1 16.02 5.54Zm-4.1 4.98c-.24 0-.62.09-.95.45-.33.37-1.25 1.22-1.25 2.97s1.28 3.45 1.46 3.69c.18.24 2.47 3.95 6.1 5.38 3.02 1.19 3.64.95 4.3.89.66-.06 2.12-.87 2.42-1.7.3-.84.3-1.56.21-1.7-.09-.16-.33-.25-.69-.43-.36-.18-2.12-1.04-2.45-1.16-.33-.12-.57-.18-.81.18-.24.36-.93 1.16-1.14 1.4-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.9-1.79-1.07-.95-1.8-2.13-2.01-2.49-.21-.36-.02-.55.16-.73.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.61-.81-.62h-.62Z" /></svg></a>
     <script src="script.js?v=20261023-1"></script>
+    <script src="/interiors.js?v=20261023-2" defer></script>
   </body>
 </html>

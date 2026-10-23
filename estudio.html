@@ -136,8 +136,10 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="/interiors.css?v=20261023-2" />
   </head>
-  <body>
+  <body class="inner-page inner-estudio">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="ONIC Beauty inicio">
         <img class="brand-logo" src="assets/logo-onic.svg" alt="ONIC Beauty" />
@@ -158,11 +160,11 @@
       </nav>
     </header>
 
-    <main>
+    <main id="contenido">
       <section class="hero cinematic-hero">
         <div class="hero-content">
-          <p class="eyebrow">Madrid / Goya / WiZink Center</p>
-          <h1>ONIC Beauty</h1>
+          <p class="eyebrow">El estudio · Goya, Madrid</p>
+          <h1>ONIC<br /><em>Beauty.</em></h1>
           <p class="hero-copy">
             Belleza especializada en cejas, pestañas, faciales y micropigmentación con una experiencia cercana, precisa y cuidada.
           </p>
@@ -177,15 +179,15 @@
           </div>
         </div>
 
-        <div class="beauty-motion" data-parallax-scene aria-label="Composición de imágenes de belleza">
-          <div class="motion-frame frame-main floating-layer" data-parallax="18" data-depth="8">
-            <img data-parallax="38" data-tilt="0.8" data-depth="15" src="assets/beauty-portrait.webp" alt="Retrato editorial de belleza creado con IA" />
+        <div class="beauty-motion" data-depth-scene aria-label="Composición de imágenes de belleza">
+          <div class="motion-frame frame-main" data-inner-float="24">
+            <img data-inner-shift="38" src="assets/beauty-portrait.webp" alt="Retrato editorial de belleza creado con IA" />
           </div>
-          <div class="motion-frame frame-top floating-layer" data-parallax="-30" data-depth="16">
-            <img data-parallax="-32" data-tilt="-0.8" data-depth="26" src="assets/beauty-tools.webp" alt="Productos de belleza y cuidado facial" />
+          <div class="motion-frame frame-top" data-inner-float="-38">
+            <img data-inner-shift="-32" srcset="/assets/inner-tools-720.webp 720w, /assets/inner-tools.webp 1440w" sizes="(max-width: 719px) 90vw, 50vw" src="/assets/inner-tools.webp" alt="Productos de belleza y cuidado facial" />
           </div>
-          <div class="motion-frame frame-bottom floating-layer" data-parallax="38" data-depth="12">
-            <img data-parallax="55" data-tilt="0.8" data-depth="20" src="assets/beauty-brows.webp" alt="Detalle de mirada, cejas y pestañas" />
+          <div class="motion-frame frame-bottom" data-inner-float="44">
+            <img data-inner-shift="55" srcset="/assets/inner-brows-600.webp 600w, /assets/inner-brows.webp 1120w" sizes="(max-width: 719px) 90vw, 50vw" src="/assets/inner-brows.webp" alt="Detalle de mirada, cejas y pestañas" />
           </div>
           <div class="motion-caption">
             <span>Skin glow</span>
@@ -209,10 +211,10 @@
           </p>
         </div>
         <div class="quick-links">
-          <a href="/servicios"><span>01</span><strong>Servicios y precios</strong><p>Tratamientos destacados, duración y categorias.</p></a>
+          <a href="/servicios"><span>01</span><strong>Servicios y precios</strong><p>Tratamientos destacados, duración y categorías.</p></a>
           <a href="/resultados"><span>02</span><strong>Resultados</strong><p>Galería visual con ambiente y cuidado facial.</p></a>
           <a href="/opiniones"><span>03</span><strong>Opiniones</strong><p>Valoración 5.0 y comentarios de clientas.</p></a>
-          <a href="/ubicacion"><span>04</span><strong>Ubicación</strong><p>Dirección, horarios y como llegar.</p></a>
+          <a href="/ubicacion"><span>04</span><strong>Ubicación</strong><p>Dirección, horarios y cómo llegar.</p></a>
         </div>
       </section>
 
@@ -231,18 +233,26 @@
           <span>Pago con tarjeta</span>
         </div>
       </section>
+
+      <section class="inner-banner" aria-label="Reserva tu momento ONIC" data-depth-scene>
+        <figure class="inner-photo"><img data-inner-shift="95" src="/assets/inner-tools.webp" srcset="/assets/inner-tools-720.webp 720w, /assets/inner-tools.webp 1440w" sizes="(max-width: 719px) 85vw, 45vw" alt="Composición editorial de inspiración de belleza, creada con IA" width="1440" height="960" decoding="async" loading="lazy" /></figure>
+        <div class="inner-banner-copy"><p class="eyebrow">ONIC Beauty · Madrid</p><h2>La técnica importa.<br /><em>El cuidado también.</em></h2><a class="button" href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar mi momento <span aria-hidden="true">↗</span></a></div>
+      </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer inner-footer">
       <strong>ONIC Beauty</strong>
-      <span>Calle de Lombia 6, Madrid, 28009</span>
-      <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar en Treatwell</a>
-    <small class="image-credit">Imágenes editoriales creadas con IA. Son ilustrativas.</small></footer>
+      <nav class="inner-footer-links" aria-label="Enlaces del pie de página"><a href="/servicios">Tratamientos</a><a href="/ubicacion">Cómo llegar</a><a href="https://wa.me/34617253991">WhatsApp ↗</a><a href="#contenido">Volver arriba ↑</a></nav>
+      <span>Calle de Lombia 6 · 28009 Madrid</span>
+      <a href="https://www.treatwell.es/establecimiento/onic-beauty/">Reservar en Treatwell ↗</a>
+      <small class="image-credit">Imágenes editoriales creadas con IA. Son ilustrativas y no representan resultados de clientas ni fotografías del local.</small>
+    </footer>
 
     <a class="whatsapp-float" href="https://wa.me/34617253991?text=Hola%20ONIC%20Beauty%2C%20me%20gustaria%20pedir%20informacion%20o%20reservar%20una%20cita." aria-label="Escribir por WhatsApp">
       <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3.2A12.7 12.7 0 0 0 5.3 22.74L3.8 28.8l6.18-1.47A12.7 12.7 0 1 0 16.02 3.2Zm0 2.34a10.36 10.36 0 0 1 8.78 15.84 10.34 10.34 0 0 1-13.93 3.63l-.44-.26-3.27.78.8-3.2-.29-.46A10.35 10.35 0 0 1 16.02 5.54Zm-4.1 4.98c-.24 0-.62.09-.95.45-.33.37-1.25 1.22-1.25 2.97s1.28 3.45 1.46 3.69c.18.24 2.47 3.95 6.1 5.38 3.02 1.19 3.64.95 4.3.89.66-.06 2.12-.87 2.42-1.7.3-.84.3-1.56.21-1.7-.09-.16-.33-.25-.69-.43-.36-.18-2.12-1.04-2.45-1.16-.33-.12-.57-.18-.81.18-.24.36-.93 1.16-1.14 1.4-.21.24-.42.27-.78.09-.36-.18-1.52-.56-2.9-1.79-1.07-.95-1.8-2.13-2.01-2.49-.21-.36-.02-.55.16-.73.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.61-.81-.62h-.62Z" /></svg>
     </a>
 
     <script src="script.js?v=20261023-1"></script>
+    <script src="/interiors.js?v=20261023-2" defer></script>
   </body>
 </html>
