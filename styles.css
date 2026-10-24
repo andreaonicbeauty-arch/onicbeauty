@@ -1616,10 +1616,10 @@ summary {
 }
 
 .whatsapp-float {
-  color: var(--lux-white);
-  background: var(--lux-black);
-  border: 1px solid rgba(255, 254, 250, 0.35);
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+  color: #fff;
+  background: #25d366;
+  border: 1px solid #25d366;
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.35);
 }
 
 @media (min-width: 720px) {
