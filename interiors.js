@@ -80,7 +80,7 @@
   document.querySelectorAll('[data-carousel]').forEach(carousel => {
     carousel.setAttribute('role', 'region');
     carousel.setAttribute('aria-roledescription', 'carrusel');
-    carousel.setAttribute('aria-label', 'Inspiración de belleza ONIC');
+    carousel.setAttribute('aria-label', 'Publicaciones de ONIC Beauty');
     const slides = [...carousel.querySelectorAll('.carousel-slide')];
     slides.forEach((slide, index) => {
       slide.setAttribute('role', 'group');
@@ -96,7 +96,7 @@
   const copy = document.querySelector('[data-copy-address]');
   if (copy) copy.addEventListener('click', async () => {
     const feedback = document.querySelector('[data-address-feedback]');
-    const address = 'Calle de Lombia 6, 28009 Madrid';
+    const address = 'Calle de José Ortega y Gasset 25, Madrid';
     try {
       await navigator.clipboard.writeText(address);
       feedback.textContent = 'Dirección copiada.';

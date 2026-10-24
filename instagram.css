@@ -1,0 +1,33 @@
+/* Keep photographic depth and the three-stage scroll film, using ONIC's own posts. */
+.instagram-home .cover-sticky .demo-slide img { object-position: 50% 58%; }
+.instagram-home .cover-sticky .video-shade { background: linear-gradient(90deg,#050505c9,#05050520 78%),linear-gradient(0deg,#050505b0,transparent 45%); }
+.instagram-film { background: #131411; }
+.instagram-film .film-background { object-position: 50% 58%; filter: brightness(.55); transform: scale(calc(1 + var(--film-p) * .32)); }
+.instagram-film .film-stage::after { content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(90deg,#080a08b3,transparent 80%); }
+.instagram-film .film-product { width: 39%; height: 70%; right: 7%; top: 14%; object-fit: cover; border: 7px solid #f3eee4; box-shadow: 0 20px 90px #0006; }
+.instagram-film .film-petals { width: 31%; height: 59%; left: 60%; top: 30%; object-fit: cover; border: 7px solid #f3eee4; box-shadow: 0 20px 90px #0006; transform: translate3d(0,calc(100px - var(--film-p) * 120px),0) rotate(calc(-8deg + var(--film-p) * 11deg)); }
+.instagram-film .film-copy { color: #fffaf0; width: 48%; text-shadow: 0 2px 20px #0004; }
+.instagram-film .film-copy h2 { font-size: 5rem; }
+.instagram-film .film-skip,.instagram-film .film-progress { color: #fffaf0; }
+.instagram-film .film-progress i { background: #fff7; }
+.instagram-film .film-progress i::after { background: #fff; }
+.instagram-home .treatment-photo img[src*="lips"],.inner-page .gallery-photo img[src*="lips"] { object-position: 50% 50%; }
+.inner-page .gallery-photo figcaption,.inner-page .carousel-slide figcaption { background: linear-gradient(transparent,#060806df); color: #fff; padding: 40px 24px 24px; inset: auto 0 0; }
+.inner-page .gallery-photo figcaption a,.inner-page .carousel-slide figcaption a { display: block; width: fit-content; font: .7rem/1.6 Arial,sans-serif; padding: 8px 0 0; border-bottom: 1px solid #fff8; }
+.instagram-stories article { padding: 28px 0; border-bottom: 1px solid #b4b7a5; }
+.instagram-stories h3 { font: 400 1.6rem/1.25 Georgia,serif; letter-spacing: 0; text-transform: none; }
+.instagram-stories p { font-size: .85rem; line-height: 1.8; color: #5c6454; }
+.instagram-stories a { font-size: .74rem; border-bottom: 1px solid #90967f; padding-bottom: 5px; }
+.inner-image-note a,.site-footer small a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width:719px) {
+ .instagram-film .film-copy { width: 86%; top: 23%; }
+ .instagram-film .film-copy h2 { font-size: 2.9rem; }
+ .instagram-film .film-product { width: 61%; height: 49%; top: 39%; right: 8%; }
+ .instagram-film .film-petals { width: 48%; height: 39%; left: 48%; top: 50%; }
+ .instagram-film .film-stage::after { background: linear-gradient(180deg,#080a08b3,transparent 70%); }
+ .instagram-film .film-skip { right: 95px; max-width: 130px; text-align: right; }
+ .inner-page .gallery-photo figcaption,.inner-page .carousel-slide figcaption { padding: 35px 18px 20px; }
+}
+@media (max-height:600px) and (min-width:720px) {
+ .instagram-film .film-copy h2 { font-size: 3rem; }
+}

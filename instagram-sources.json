@@ -1,0 +1,55 @@
+{
+  "profile": "https://www.instagram.com/onic.beauty/",
+  "verified": "2026-10-24",
+  "contact": {
+    "phone": "+34 642 814 899",
+    "address": "C/ José Ortega y Gasset, 25, Madrid"
+  },
+  "publications": [
+    {
+      "asset": "assets/instagram-brows.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DeJ0Gpqs_58/",
+      "title": "Velvet Brows"
+    },
+    {
+      "asset": "assets/instagram-ritual.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DeHVmxiMh6v/",
+      "title": "Tu momento ONIC"
+    },
+    {
+      "asset": "assets/instagram-lips.webp",
+      "url": "https://www.instagram.com/onic.beauty/p/DeGwVN5jLjE/",
+      "title": "Micropigmentación de labios"
+    },
+    {
+      "asset": "assets/instagram-microblading.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DdrWBF9RA99/",
+      "title": "Microblading PhiBrows"
+    },
+    {
+      "asset": "assets/instagram-eyeliner.webp",
+      "url": "https://www.instagram.com/onic.beauty/p/DdY8tuSDI0g/",
+      "title": "Eyeliner difuminado"
+    },
+    {
+      "asset": "assets/instagram-lashes.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DdUySumM8KZ/",
+      "title": "Lash Lift"
+    },
+    {
+      "asset": "assets/instagram-facial.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DdR4h7ps4lX/",
+      "title": "Limpieza facial profunda"
+    },
+    {
+      "asset": "assets/instagram-skin.webp",
+      "url": "https://www.instagram.com/onic.beauty/p/DdPcCnPDL2X/",
+      "title": "Cuidado de la piel"
+    },
+    {
+      "asset": "assets/instagram-care.webp",
+      "url": "https://www.instagram.com/onic.beauty/reel/DdMmRaysAw1/",
+      "title": "Cuidar la piel, con tiempo"
+    }
+  ]
+}
