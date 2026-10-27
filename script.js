@@ -52,11 +52,11 @@ document.querySelectorAll("video[data-autoplay-on-view]").forEach((video) => {
     return;
   }
   const observer = new IntersectionObserver((entries) => {
-    if (!entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) return;
+    if (!entries.some((entry) => entry.isIntersecting)) return;
     observer.disconnect();
     // Never override playback or a pause already chosen by the visitor.
     if (video.paused && video.currentTime === 0) startVideo();
-  }, { threshold: 0.5 });
+  }, { threshold: 0 });
   observer.observe(video);
 });
 
