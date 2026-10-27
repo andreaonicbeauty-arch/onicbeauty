@@ -37,6 +37,29 @@ if (menuToggle && siteNav) {
 }
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+// Start the film when it is visible, so it does not finish above the visitor's scroll position.
+document.querySelectorAll("video[data-autoplay-on-view]").forEach((video) => {
+  if (reducedMotion.matches) return;
+  const startVideo = () => {
+    video.muted = true;
+    video.autoplay = true;
+    // Keep native controls available if the browser declines automatic playback.
+    video.play().catch(() => {});
+  };
+  if (!("IntersectionObserver" in window)) {
+    startVideo();
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    if (!entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) return;
+    observer.disconnect();
+    // Never override playback or a pause already chosen by the visitor.
+    if (video.paused && video.currentTime === 0) startVideo();
+  }, { threshold: 0.5 });
+  observer.observe(video);
+});
+
 // Parallax starts automatically; carousel autoplay still follows the system preference.
 document.documentElement.classList.add("motion-enabled");
 document.documentElement.classList.remove("motion-disabled");

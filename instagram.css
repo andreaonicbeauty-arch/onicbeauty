@@ -32,7 +32,7 @@
  .instagram-film .film-copy h2 { font-size: 3rem; }
 }
 
-/* Keep the full portrait film visible, with playback chosen by the visitor. */
+/* Keep the full portrait film visible, with native playback controls. */
 .onic-video { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,380px); align-items: center; gap: clamp(40px,8vw,120px); padding-block: 110px; }
 .onic-video-copy h2 { font: 400 clamp(2.8rem,5vw,4.8rem)/1.05 Georgia,serif; margin: 24px 0; }
 .onic-video-copy h2 em { font-weight: 400; }
@@ -41,6 +41,7 @@
 .onic-video-frame { width: 100%; max-width: 380px; margin: 0; justify-self: center; }
 .onic-video-frame video { display: block; width: 100%; height: auto; aspect-ratio: 320 / 568; background: #131411; object-fit: contain; box-shadow: 0 24px 65px #161b1626; }
 .onic-video-frame figcaption { margin-top: 16px; color: var(--lux-muted); font-size: .67rem; }
+.onic-video-frame figcaption strong { display: inline-block; margin-bottom: 5px; color: #343b2e; font-size: .78rem; }
 @media (max-width:719px) {
  .onic-video { grid-template-columns: 1fr; gap: 36px; padding-block: 70px; }
  .onic-video-copy h2 { font-size: 2.8rem; }
